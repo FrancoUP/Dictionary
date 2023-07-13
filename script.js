@@ -74,7 +74,6 @@ const setHTMLcontent = function(data, index) {
   const arrHTMLdefinitons = [];
   const partOfspech = data[0].meanings[index].partOfSpeech;
   const arrOfDefinitions = data[0].meanings[index].definitions;
-  if(arrOfDefinitions.length > 3) arrOfDefinitions.length = 3;
 
   arrOfDefinitions.forEach( (el) => {
 
