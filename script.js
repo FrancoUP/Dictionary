@@ -1,4 +1,4 @@
-const listFonts = document.querySelector(".fonts-selector");
+ listFonts = document.querySelector(".fonts-selector");
 const textFonts = document.querySelector(".text-fonts");
 const arrowSelect = document.querySelector(".arrow-selection");
 const screenModeSelection = document.querySelector(".toggle-selector");
@@ -365,3 +365,13 @@ searchPress.forEach( (el) => {
   })
 
 })
+
+
+  document.body.addEventListener('touchmove', (e) => { 
+  
+     // Questo blocca il refresh della pagina 
+     document.body.style.overscrollBehavior = "none"; 
+     // Questo mantiene lo scroll nonostante il refresh sia deattivato 
+     document.body.style.overflow = "auto"; 
+  
+   }, { passive: false });
